@@ -51,7 +51,7 @@ var path = require('path')
         demand: false,
         alias: 'p',
         description: 'port',
-        default: '80'
+        default: process.env.port || 80
       },
       path: {
         demand: false,
