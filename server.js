@@ -88,7 +88,7 @@ if (opts.sslkey || opts.sslcert) {
 
 
 var userPath = opts.path;
-console.log('env.port: '+process.env.port);
+console.log('env.port: '+process.env.PORT);
 var server = PeerServer(opts, function(server) {
   var host = server.address().address;
   var port = server.address().port;
