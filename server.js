@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 var path = require('path')
-  , pkg = require('../package.json')
+  , pkg = require('./package.json')
   , fs = require('fs')
   , version = pkg.version
-  , PeerServer = require('../lib').PeerServer
-  , util = require('../lib/util')
+  , PeerServer = require('./lib').PeerServer
+  , util = require('./lib/util')
   , opts = require('optimist')
     .usage('Usage: $0')
     .options({
