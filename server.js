@@ -1,5 +1,5 @@
-#!/usr/bin/env node
 
+/*
 var path = require('path')
   , pkg = require('./package.json')
   , fs = require('fs')
@@ -96,3 +96,13 @@ var server = PeerServer(opts, function(server) {
     host, port, userPath || '/', version
   );
 });
+*/
+
+var http = require('http');
+
+http.createServer(function (req, res) {
+    
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end('Hello, world!');
+    
+}).listen(process.env.PORT || 8080);
