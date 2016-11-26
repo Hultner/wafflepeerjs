@@ -51,7 +51,7 @@ var path = require('path')
         demand: false,
         alias: 'p',
         description: 'port',
-        default: process.env.PORT || 80
+        default: 80
       },
       path: {
         demand: false,
@@ -88,7 +88,6 @@ if (opts.sslkey || opts.sslcert) {
 
 
 var userPath = opts.path;
-console.log('env.port: '+process.env.PORT);
 var server = PeerServer(opts, function(server) {
   var host = server.address().address;
   var port = server.address().port;
