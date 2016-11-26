@@ -5,14 +5,6 @@
         <add name="iisnode" path="server.js" verb="*" modules="iisnode" /> 
     </handlers>
         <!--Url rewrite rule that anything coming to any url of within site goes through app.js-->
-    <rewrite>
-        <rules>
-            <rule name="toNode">
-                <match url="/*"/>
-                <action type="Rewrite" url="server.js"/>
-            </rule>
-        </rules>
-    </rewrite>
 
   </system.webServer>
 </configuration>
